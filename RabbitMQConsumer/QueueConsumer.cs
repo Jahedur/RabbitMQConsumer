@@ -10,6 +10,10 @@ namespace RabbitMQConsumer
 {
     public class QueueConsumer
     {
+        /// <summary>
+        /// This is a queue consumer using the default exchange
+        /// </summary>
+        /// <param name="channel"></param>
         public static void Consume(IModel channel)
         {
             const string queueName = "testqueue";
